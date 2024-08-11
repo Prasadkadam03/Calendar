@@ -1,0 +1,42 @@
+.calendar {
+  width: 350px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: auto;
+}
+
+.month {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.month-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.days, .dates {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.day, .date {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.date:hover {
+  background-color: #f0f0f0;
+}
+.spacer {
+  flex: 1 1 auto; 
+}

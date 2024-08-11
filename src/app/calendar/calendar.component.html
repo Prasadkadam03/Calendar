@@ -1,0 +1,22 @@
+<mat-toolbar color="primary">
+  <span>My Application</span>
+  <span class="spacer"></span>
+  <button mat-button (click)="prevMonth()">
+    <mat-icon>chevron_left</mat-icon>
+  </button>
+  <button mat-button (click)="nextMonth()">
+    <mat-icon>chevron_right</mat-icon>
+  </button>
+</mat-toolbar>
+
+<div class="calendar">
+  <div class="month">
+    <span class="month-name">{{ monthNames[currentMonth] }} {{ currentYear }}</span>
+  </div>
+  <div class="days">
+    <div *ngFor="let day of dayNames" class="day">{{ day }}</div>
+  </div>
+  <div class="dates">
+    <div *ngFor="let date of dates" class="date">{{ date > 0 ? date : '' }}</div>
+  </div>
+</div>
